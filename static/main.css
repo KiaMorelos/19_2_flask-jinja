@@ -1,0 +1,14 @@
+body {
+    font-family: sans-serif;
+}
+
+div {
+    margin:5%;
+}
+
+p {
+    padding: 10%;
+}
+button {
+    margin: 0 5%;
+}
