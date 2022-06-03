@@ -10,11 +10,13 @@ debug = DebugToolbarExtension(app)
 
 @app.route('/')
 def home():
+    """Show form based on the word prompts needed for the story"""
     word_list = story.prompts
     return render_template("form.html", words=word_list)
 
 @app.route('/story')
 def story_view():
+    """show story with users answer in the story"""
     madlib = story.generate(request.args)
     return render_template("story.html", madlib=madlib)
 
